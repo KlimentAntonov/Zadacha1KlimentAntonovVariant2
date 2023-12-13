@@ -1,8 +1,4 @@
 public class Main {
-    @Override
-    protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
-    }
 
     public static void main(String[] args) {
         Referat referat = new Referat();
@@ -10,6 +6,10 @@ public class Main {
         referat.theme = "Theme";
         referat.pages = 10;
 
+        referat.super.clone();
 
+        for(int i=0; i<3; i++) {
+            referat.Author().name.clone();
+        }
     }
 }
